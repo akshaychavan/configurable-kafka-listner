@@ -18,25 +18,17 @@ package com.configurable.kafka.listner.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.common.Foo1;
-
-/**
- * @author Gary Russell
- * @since 2.2.1
- */
 @RestController
 public class ConsumerController {
 
 	@Autowired
 	private KafkaTemplate<Object, Object> template;
 
-	@PostMapping(path = "/send/foo/{what}")
-	public void sendFoo(@PathVariable String what) {
-		this.template.send("topic1", new Foo1(what));
-	}
+//	@PostMapping(path = "/send/foo/{what}")
+//	public void sendFoo(@PathVariable String what) {
+//		this.template.send("topic1", new Foo1(what));
+//	}
 
 }

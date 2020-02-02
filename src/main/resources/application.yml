@@ -7,14 +7,14 @@ spring:
 
 kafka-listeners:
   -
-#    topics: [test]
+    topics: [test]
     auto-startup: true
-    topic-partitions:
-      -
-        topic: test
-        partition-offsets:
-          -
-            partition: 0
-            initial-offset: 2    
+#    topic-partitions:
+#      -
+#        topic: test
+#        partition-offsets:
+#          -
+#            partition: 0
+#            initial-offset: 2    
 
 
